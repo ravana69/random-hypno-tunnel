@@ -1,0 +1,27 @@
+body {
+  all: unset;
+  background-color: var(--bg);
+	overflow: hidden;
+}
+ul {
+  all: unset;
+  animation: hypno 10s linear infinite alternate-reverse;
+  container-type: inline-size;
+  display: grid;
+  place-content: center;
+  & li {
+    aspect-ratio: 1 / 1;
+    background-color: var(--bg);
+    border-radius: 25%;
+    grid-area: 1 / 1;
+    list-style: none;
+    margin: auto;
+    width: var(--w);
+  }
+}
+@keyframes hypno {
+  100% { 
+    rotate: 360deg;
+    scale: 3;
+  }
+}
